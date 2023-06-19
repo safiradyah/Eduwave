@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title >Informasi Absensi</title>
+    <link rel="icon" href="img/Eduwave.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"rel="nofollow" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+    }
+    .custom-container {
+      background-color: #007890;
+      margin: 20px;
+      padding: 20px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+</style>
+<body>
+
+  <!-- Start Navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style=" padding: 2%; background-color: white; ">
+    <div class="container-fluid" style="justify-content: center;">
+            <div class="featured-image" > <img src="img/logo5.png" alt="Logo" style="width: 150px;"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto px-5">
+            <li class="nav-item px-5">
+              <a class="nav-link active" aria-current="page" href="landingpage.html">Home</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+            </li>
+          </ul>
+          <form class="d-flex " role="search">
+            <div class="input-group rounded">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+              <div class="notif d-flex mx-4">
+                <a class="featured-image mx-2" href="profile.html"> <img src="img/profile.png" alt="Logo"  style="width: 35px;"></a>
+                <div class="featured-image mx-2" > <img src="img/notif.png" alt="Logo" style="width: 25px;"></div>
+            
+            </div>
+          </form>
+        </div>
+    </div>
+  </nav>
+<!-- End Navigasi -->
+
+    <!-- Start Informasi Absensi -->
+    <br><br><br>
+    <div class="container mb-1 m-5 px-3" style="max-width:93%; padding: 20px;">
+      <h2 style="color: #00B4D8; font-weight: bold; margin-left: 30px;">Informasi Absensi</h2>
+            <!-- try -->
+      <div class="container p-3" style="background-color: #EBF0F4; border-radius: 10px;">
+        <div class="row p-3">
+          <div class="col">
+            <table class="table border-0 animate__animated animate__fadeInLeft">
+              <thead>
+              </thead>
+              <tbody>
+                <tr style="color: black;">
+                  <th class="border-0 text-center" scope="row"  style=" background-color: #CCF0F7;">1</th>
+                  <td class="border-0" style=" background-color: #CCF0F7;">UI/UX Design & Research</td>
+                  <td class="text-right border-0" style=" background-color: #CCF0F7;">
+                    <button class="btn btn-primary border-0" style="background-color: #00B4D8; border-radius: 10px;" onclick="toggleDetails(1)">Detail absen</button>
+                  </td>
+                </tr>
+                <tr style="background-color: white;">
+                  <th class="border-0 text-center" scope="row">2</th>
+                  <td class="border-0" >Back-end Developer</td>
+                  <td class="text-right border-0">
+                    <button class="btn btn-primary border-0" style="background-color: #00B4D8;  border-radius: 10px;" onclick="toggleDetails(2)">Detail absen</button>
+                  </td>
+                </tr>
+                <tr style="color: black;">
+                  <th class="border-0 text-center" scope="row"  style=" background-color: #CCF0F7;">3</th>
+                  <td class="border-0" style=" background-color: #CCF0F7;">Front-end Developer</td>
+                  <td class="text-right border-0" style=" background-color: #CCF0F7;">
+                    <button class="btn btn-primary border-0" style="background-color: #00B4D8; border-radius: 10px;" onclick="toggleDetails(1)">Detail absen</button>
+                  </td>
+                </tr>
+                <tr style="background-color: white;">
+                  <th class="border-0 text-center" scope="row">4</th>
+                  <td class="border-0" >Human Resource</td>
+                  <td class="text-right border-0">
+                    <button class="btn btn-primary border-0" style="background-color: #00B4D8;  border-radius: 10px;" onclick="toggleDetails(2)">Detail absen</button>
+                  </td>
+                </tr>
+                <tr style="color: black;">
+                  <th class="border-0 text-center" scope="row"  style=" background-color: #CCF0F7;">5</th>
+                  <td class="border-0" style=" background-color: #CCF0F7;">Digital Marketing</td>
+                  <td class="text-right border-0" style=" background-color: #CCF0F7;">
+                    <button class="btn btn-primary border-0" style="background-color: #00B4D8; border-radius: 10px;" onclick="toggleDetails(1)">Detail absen</button>
+                  </td>
+                </tr>
+                <tr style="background-color: white;">
+                  <th class="border-0 text-center" scope="row">6</th>
+                  <td class="border-0" >Data Analyst</td>
+                  <td class="text-right border-0">
+                    <button class="btn btn-primary border-0" style="background-color: #00B4D8;  border-radius: 10px;" onclick="toggleDetails(2)">Detail absen</button>
+                  </td>
+                </tr>
+                <tr style="color: black;">
+                  <th class="border-0 text-center" scope="row"  style=" background-color: #CCF0F7;">7</th>
+                  <td class="border-0" style=" background-color: #CCF0F7;">Product Management</td>
+                  <td class="text-right border-0" style=" background-color: #CCF0F7;">
+                    <button class="btn btn-primary border-0" style="background-color: #00B4D8; border-radius: 10px;" onclick="toggleDetails(1)">Detail absen</button>
+                  </td>
+                </tr>
+                <tr style="background-color: white;">
+                  <th class="border-0 text-center" scope="row">8</th>
+                  <td class="border-0" >Graphic Design</td>
+                  <td class="text-right border-0">
+                    <button class="btn btn-primary border-0" style="background-color: #00B4D8;  border-radius: 10px;" onclick="toggleDetails(2)">Detail absen</button>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          <!-- card collapse -->
+          <!-- 1 -->
+          <div class="col-md-4 animate__animated animate__fadeInRight"  id="detailContainer">
+            <div class="card h-100 p-3" style="background-color: #CCF0F7; border-radius: 12px;">
+                <div class="card-body">
+                  
+                  <h5 class="card-title" style="font-weight: bold;">UI/UX Design & Research</h5>
+                  <p class="card-text" style="font-size: 15px; line-height: 20px;">Detail</p>
+                  <a href="#" class="btn" style=" width: 100%; text-align: left; background-color: #ffffff;; color: black;">Pertemuan 8 : UI Design</a>
+                  <div class="modal-header justify-content-center">
+                    <img src="img/absensi90persen.png" style="width: 55%;" class="card-img-top m-4" alt="Image 2">
+                  </div>
+                  
+                </div>
+              <div class="card border-0 mx-4 mb-4">
+            
+                  <a class="btn" style="background-color: #00B4D8; color: #ffffff;" data-bs-target="#myModal1" data-bs-toggle="modal">Absen</a>
+              
+              </div>
+              <script>
+                function toggleDetails(rowNumber) {
+                  var detailContainer = document.getElementById('detailContainer');
+                  var tableContainer = document.querySelector('.col-md-6:first-child');
+              
+                  detailContainer.style.display = (detailContainer.style.display === 'none') ? 'block' : 'none';
+              
+                  if (detailContainer.style.display === 'block') {
+                    tableContainer.classList.remove('col-md-4');
+                    tableContainer.classList.add('col-md-6');
+                  } else {
+                    tableContainer.classList.remove('col-md-4');
+                    tableContainer.classList.add('col-md-6');
+                  }
+                }
+              </script>
+              
+            </div>
+          </div>
+           <!-- 1 -->
+           <!-- 2 -->
+           <!-- 2 -->
+         
+          <!-- card collapse -->
+          </div>
+        </div>
+      </div>
+      <!-- try -->
+       
+               
+                <div id="myModal1" class="modal animate__animated animate__fadeInUpBig" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- konten modal-->
+                    <div class="modal-content">
+                      <!-- heading modal -->
+                      <div class="modal-header">
+                        <h4 class="modal-title" style="font-weight: bold;">Absensi</h4>
+                        <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+                      </div>
+                      <!-- body modal -->
+                      <div class="modal-body">
+                        <div class="form-group" style="color: black;">
+                          Full Name<input type="text" class="form-control" placeholder="Enter your Full Name">
+                        </div>
+                        <div class="form-group" style="color: black;">
+                          Email<input type="text" class="form-control" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group" style="color: black;">
+                          Tanggal<input type="text" class="form-control" id="date" name="date" placeholder="MM/DD/YYY">
+                        </div>
+                        <!-- Menambahkan jQuery -->
+                        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+                        <!-- Menambahakan Date Range Picker -->
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+                        <script>
+                          $(document).ready(function(){
+                            var date_input=$('input[name="date"]');
+                            var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                            date_input.datepicker({
+                              format: 'mm/dd/yyyy',
+                              container: container,
+                              todayHighlight: true,
+                              autoclose: true,
+                            })
+                          })
+                        </script>
+                      </div>
+                      <!-- footer modal -->
+                      <div class="form-group m-3">
+                        <a class="btn btn-block" style="background-color: #00B4D8; color: #ffffff;" href="absen.html">Submit</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+    </div>
+    <!-- End Informasi Absensi -->
+
+  <!-- Start Footer -->
+  <div class="footer">
+    <div class="container mt-3" style=" background-color: #00B4D8; max-width: 100%; color : white; padding: 20px;">
+  <div class="container">
+    <div class="row">
+      <div class="col text-left">
+        <div class="text-left">
+          <table class="table">
+            <table  class="table table-sm  table-borderless m-3" style=" border: none;">
+              <tbody >
+                <tr>
+                  <td style="border:none; background-color: #00B4D8;" >
+                    
+                  </td>
+                  <td style="text-align: left; font-weight: bold; border: none; background-color: #00B4D8; color: white;"><h5>Page</h5></td>
+                </tr>
+                <tr>
+                  
+                  <td style="border:none; background-color: #00B4D8;" >
+                    
+                  </td>
+                  <td style="text-align: left; border: none; background-color: #00B4D8; color: white;">
+                    <p>Dashboard</p>
+                    <p>Course</p>
+                    <p>Class</p>
+                    <p>Profile</p>
+                    <p>Informasi Absensi</p></td>
+                </tr>
+                
+                
+              </tbody>
+            </table>
+        </div>
+      </div>
+      <div class="col text-center mx-5">
+        <h1></h1>
+      </div>
+      <div class="col ml-5 text-right">
+        <div class="text-right ml-5" >
+          <table class="table">
+            <table  class="table table-sm  table-borderless" style=" border: none;">
+              <tbody>
+                <tr>
+                  <td style="border:none; background-color: #00B4D8; " >
+                    
+                  </td>
+                  <td style="text-align: right; font-weight: bold; border: none; color: white; background-color: #00B4D8;"><h5>Hubungi Kami</h5></td>
+                </tr>
+                <tr>
+                  
+                  <td style="border:none; background-color: #00B4D8;" >
+                    <button class="btn btn-light bg p-1" style="width: 35px; height: 35px;"><img src="img/telepon.png" alt="pesan" style="width: 80%;"> </button>
+                  </td>
+                  <td style="text-align: right; border: none; color: white; background-color: #00B4D8;">0821-1111-2222</td>
+                </tr>
+                <tr>
+                  <td style="border:none; background-color: #00B4D8;">
+                    <button class="btn btn-light p-1" style="width: 35px; height: 35px;"><img src="img/pesan.png" alt="pesan" style="width: 80%;"> </button>
+                  </td>
+                  <td style="text-align: right; border: none; color: white; background-color: #00B4D8;">email@eduwave.co.id</td>
+                </tr>
+                <tr>
+                  <td style="border:none; background-color: #00B4D8;">
+                    
+                  </td>
+                  <td style="text-align: right; border:none; background-color: #00B4D8; color: white;">Office, Jl.Tulodong No.69</td>
+                </tr>
+                
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center align-items-center">
+    <a class="featured-image" > <img src="img/logo1.png" alt="Logo" style="width: 50px;"></a>
+</div>
+<div class="container d-flex justify-content-center align-items-center">
+    <p class="col text-center">Eduwave, All right reserved (2023)<p>
+</div>
+</div>
+</div>
+  <!-- End Footer -->
+</body>
+</html>
